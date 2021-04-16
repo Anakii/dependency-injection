@@ -8,13 +8,19 @@ import { ChildTwoComponent } from './child-two/child-two.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoggerModule } from './logger.module';
 import { loggerConfig, LOGGER_CONFIG } from './utils';
+import { WidgetComponent } from './widget/widget.component';
+import { JiraWidgetComponent } from './jira-widget/jira-widget.component';
+import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
 
 @NgModule({
-  declarations: [
+  declarations: [			
     AppComponent,
     ChildOneComponent,
-    ChildTwoComponent
-  ],
+    ChildTwoComponent,
+      WidgetComponent,
+      JiraWidgetComponent,
+      WeatherWidgetComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
